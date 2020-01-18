@@ -1,0 +1,82 @@
+		h1
+		{
+			color: red;
+			text-align: center;
+			margin-bottom: 50px;
+		}
+
+		body
+		{
+			text-align: center;
+			/*background-color: #F0EAD6;*/
+		}
+
+		input
+		{
+			text-align: center;
+			width: 36px;			/* if changing width and height, then change of .box1,.. also*/
+			height: 34px;		/*maintain the diff of 2*/
+			font-size: 25px;
+		}
+
+		.smallbox div
+		{
+			display: inline-block;	 /*to make block of 3 together*/	
+		}
+
+		.box1 , .box2 , .box3
+		{
+			width: 120px;	/*width of (input+4)*3 */
+			height: 120px;
+			display: inline-block;	
+
+			border: 1px solid red;
+		}
+
+		.a, .b, .c
+		{
+			border-top: 2px solid black;
+		}
+
+		.c, .f, .i
+		{
+			border-right: 2px solid black;
+		}
+
+		.g, .h, .i
+		{
+			border-bottom: 2px solid black;
+		}
+
+		.a, .d, .g
+		{
+			border-left: 2px solid black;
+		}
+
+		button
+		{
+			font-size: 25px;
+		}
+
+		#reset
+		{
+			margin: 50px;
+			margin-left: -20px;
+			border-style: groove;
+		}
+
+		#reset:hover , #solve:hover
+		{
+			background-color: #FF6F61;
+		}
+		#solve
+		{
+			margin-left: 20px;
+			border-style: groove;
+		}
+
+		.colorRed
+		{
+			color: white;
+			background-color: #FF6F61;
+		}

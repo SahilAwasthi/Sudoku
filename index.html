@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sudoku</title>
+
+	<link rel="stylesheet" type="text/css" href="letsplay.css">
+
+
+</head>
+<body>
+
+	<h1>Sudoku Solver</h1>
+
+
+	<div class="row1">
+		<div class = "a box1">
+		
+		<div class="smallbox first">
+			<div><input type="text" maxlength="1" class="a1" name="" id="0"></div
+			><div><input type="text" maxlength="1" class="a1" name="" id="1"></div
+			><div><input type="text" maxlength="1" class="a1" name="" id="2"></div>
+		</div>
+		<div class="smallbox first">
+			<div><input type="text" maxlength="1" name="" id="9"></div
+			><div><input type="text" maxlength="1" name="" id="10"></div
+			><div><input type="text" maxlength="1" name="" id="11"></div>
+		</div>
+		<div class="smallbox first">
+			<div><input type="text" maxlength="1" name="" id="18"></div
+			><div><input type="text" maxlength="1" name="" id="19"></div
+			><div><input type="text" maxlength="1" name="" id="20"></div>
+		</div>
+
+		</div
+
+		><div class = "b box2">
+			
+			<div class="smallbox first">
+				<div><input type="text" maxlength="1" class="a1" name="" id="3"></div
+				><div><input type="text" maxlength="1" class="a1" name="" id="4"></div
+				><div><input type="text" maxlength="1" class="a1" name="" id="5"></div>
+			</div>
+			<div class="smallbox first">
+				<div><input type="text" maxlength="1" name="" id="12"></div
+				><div><input type="text" maxlength="1" name="" id="13"></div
+				><div><input type="text" maxlength="1" name="" id="14"></div>
+			</div>
+			<div class="smallbox first">
+				<div><input type="text" maxlength="1" name="" id="21"></div
+				><div><input type="text" maxlength="1" name="" id="22"></div
+				><div><input type="text" maxlength="1" name="" id="23"></div>
+			</div>
+
+		</div
+		><div class = "c box3">
+			
+			<div class="smallbox first">
+				<div><input type="text" maxlength="1" class="a1" name="" id="6"></div
+				><div><input type="text" maxlength="1" class="a1" name="" id="7"></div
+				><div><input type="text" maxlength="1" class="a1" name="" id="8"></div>
+			</div>
+			<div class="smallbox first">
+				<div><input type="text" maxlength="1" name="" id="15"></div
+				><div><input type="text" maxlength="1" name="" id="16"></div
+				><div><input type="text" maxlength="1" name="" id="17"></div>
+			</div>
+			<div class="smallbox first">
+				<div><input type="text" maxlength="1" name="" id="24"></div
+				><div><input type="text" maxlength="1" name="" id="25"></div
+				><div><input type="text" maxlength="1" name="" id="26"></div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="row2">
+		<div class = "d box1">
+		
+		<div class="smallbox first">
+			<div><input type="text" maxlength="1" class="a1" name="" id="27"></div
+			><div><input type="text" maxlength="1" class="a1" name="" id="28"></div
+			><div><input type="text" maxlength="1" class="a1" name="" id="29"></div>
+		</div>
+		<div class="smallbox first">
+			<div><input type="text" maxlength="1" name="" id="36"></div
+			><div><input type="text" maxlength="1" name="" id="37"></div
+			><div><input type="text" maxlength="1" name="" id="38"></div>
+		</div>
+		<div class="smallbox first">
+			<div><input type="text" maxlength="1" name="" id="45"></div
+			><div><input type="text" maxlength="1" name="" id="46"></div
+			><div><input type="text" maxlength="1" name="" id="47"></div>
+		</div>
+
+		</div
+
+		><div class = "e box2">
+			
+			<div class="smallbox first">
+				<div><input type="text" maxlength="1" class="a1" name="" id="30"></div
+				><div><input type="text" maxlength="1" class="a1" name="" id="31"></div
+				><div><input type="text" maxlength="1" class="a1" name="" id="32"></div>
+			</div>
+			<div class="smallbox first">
+				<div><input type="text" maxlength="1" name="" id="39"></div
+				><div><input type="text" maxlength="1" name="" id="40"></div
+				><div><input type="text" maxlength="1" name="" id="41"></div>
+			</div>
+			<div class="smallbox first">
+				<div><input type="text" maxlength="1" name="" id="48"></div
+				><div><input type="text" maxlength="1" name="" id="49"></div
+				><div><input type="text" maxlength="1" name="" id="50"></div>
+			</div>
+
+		</div
+		><div class = "f box3">
+			
+			<div class="smallbox first">
+				<div><input type="text" maxlength="1" class="a1" name="" id="33"></div
+				><div><input type="text" maxlength="1" class="a1" name="" id="34"></div
+				><div><input type="text" maxlength="1" class="a1" name="" id="35"></div>
+			</div>
+			<div class="smallbox first">
+				<div><input type="text" maxlength="1" name="" id="42"></div
+				><div><input type="text" maxlength="1" name="" id="43"></div
+				><div><input type="text" maxlength="1" name="" id="44"></div>
+			</div>
+			<div class="smallbox first">
+				<div><input type="text" maxlength="1" name="" id="51"></div
+				><div><input type="text" maxlength="1" name="" id="52"></div
+				><div><input type="text" maxlength="1" name="" id="53"></div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="row3">
+		<div class = "g box1">
+		
+		<div class="smallbox first">
+			<div><input type="text" maxlength="1" class="a1" name="" id="54"></div
+			><div><input type="text" maxlength="1" class="a1" name="" id="55"></div
+			><div><input type="text" maxlength="1" class="a1" name="" id="56"></div>
+		</div>
+		<div class="smallbox first">
+			<div><input type="text" maxlength="1" name="" id="63"></div
+			><div><input type="text" maxlength="1" name="" id="64"></div
+			><div><input type="text" maxlength="1" name="" id="65"></div>
+		</div>
+		<div class="smallbox first">
+			<div><input type="text" maxlength="1" name="" id="72"></div
+			><div><input type="text" maxlength="1" name="" id="73"></div
+			><div><input type="text" maxlength="1" name="" id="74"></div>
+		</div>
+
+		</div
+
+		><div class = "h box2">
+			
+			<div class="smallbox first">
+				<div><input type="text" maxlength="1" class="a1" name="" id="57"></div
+				><div><input type="text" maxlength="1" class="a1" name="" id="58"></div
+				><div><input type="text" maxlength="1" class="a1" name="" id="59"></div>
+			</div>
+			<div class="smallbox first">
+				<div><input type="text" maxlength="1" name="" id="66"></div
+				><div><input type="text" maxlength="1" name="" id="67"></div
+				><div><input type="text" maxlength="1" name="" id="68"></div>
+			</div>
+			<div class="smallbox first">
+				<div><input type="text" maxlength="1" name="" id="75"></div
+				><div><input type="text" maxlength="1" name="" id="76"></div
+				><div><input type="text" maxlength="1" name="" id="77"></div>
+			</div>
+
+		</div
+		><div class = "i box3">
+			
+			<div class="smallbox first">
+				<div><input type="text" maxlength="1" class="a1" name="" id="60"></div
+				><div><input type="text" maxlength="1" class="a1" name="" id="61"></div
+				><div><input type="text" maxlength="1" class="a1" name="" id="62"></div>
+			</div>
+			<div class="smallbox first">
+				<div><input type="text" maxlength="1" name="" id="69"></div
+				><div><input type="text" maxlength="1" name="" id="70"></div
+				><div><input type="text" maxlength="1" name="" id="71"></div>
+			</div>
+			<div class="smallbox first">
+				<div><input type="text" maxlength="1" name="" id="78"></div
+				><div><input type="text" maxlength="1" name="" id="79"></div
+				><div><input type="text" maxlength="1" name="" id="80"></div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<button id="reset">Reset</button>
+	<button id="solve">Solve</button>
+
+
+	<script type="text/javascript" src="letsplay.js"></script>
+
+</body>
+</html>
