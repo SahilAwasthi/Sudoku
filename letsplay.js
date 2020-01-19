@@ -8,6 +8,13 @@ document.getElementById("solve").addEventListener("click",solve_sudoku);
 
 function reset_grid()
 {
+	currvalue = 0;
+
+	for(var i = 0;i<=9;i++)
+	{
+		document.getElementById("b"+i).style.backgroundColor = "white";
+	}
+
 	for(var i = 0;i<totalinput;i++)
 	{
 		document.getElementById(i).value = "";
@@ -40,6 +47,12 @@ for(var i = 0;i<9;i++)
 function solve_sudoku()
 {
 	var isvalid = false,val,x,y,p,q;
+	currvalue = 0;
+
+	for(var i = 0;i<=9;i++)
+	{
+		document.getElementById("b"+i).style.backgroundColor = "white";
+	}
 
 	for(var i = 0;i<81;i++)
 	{
