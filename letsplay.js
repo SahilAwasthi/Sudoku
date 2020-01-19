@@ -74,6 +74,16 @@ function solve_sudoku()
 		return;
 	}
 
+	isvalid = isGridOkay();
+
+	if(isvalid == false)
+	{
+		alert("Sudoku can't be solved\n"+"the sudoku is wrong!!!")
+		return;
+	}
+
+
+
 	if(solve() == false)
 	{
 		alert("Sudoku can't be solved\n"+"the sudoku is wrong!!!")
@@ -81,6 +91,49 @@ function solve_sudoku()
 	}
 
 	printgrid();
+
+}
+
+function isGridOkay()
+{
+	var i,j,k,valid,p,q;
+	valid = true;
+	for(i = 0;i<9;i++)
+	{
+		for(j = 0;j<9;j++)
+		{
+			if(board[i][j] == 0)
+				continue;
+
+			for(k = 0;k<9;k++)
+			{
+				if((j != k) && (board[i][j] == board[i][k]))
+					return false;
+				if((i != k) && (board[i][j] == board[k][j]))
+					return false;
+
+				var row = Math.floor(i/3),col = Math.floor(j/3);
+				row *= 3;
+				col *= 3;
+				for(p = 0;p<3;p++)
+				{
+					for(q = 0;q<3;q++)
+					{
+						if((row+p == i) && (col+q == j))
+							continue;
+
+						if(board[row+p][col+q] == board[i][j])
+							return false;
+					}
+				}
+
+
+			}
+		}
+	}
+
+
+	return true;
 
 }
 
@@ -105,6 +158,8 @@ function solve()
 
 	if(complete == true)
 		return true;
+
+
 
 	for(i = 1;i<=9;i++)
 	{
