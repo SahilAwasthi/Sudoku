@@ -14,7 +14,7 @@
 		input
 		{
 			text-align: center;
-			width: 36px;			/* if changing width and height, then change of .box1,.. also*/
+			width: 32px;			/* if changing width and height, then change of .box1,.. also*/
 			height: 34px;		/*maintain the diff of 2*/
 			font-size: 25px;
 		}
